@@ -2,14 +2,105 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/output.css" rel="stylesheet">
-    <title>Document</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cabinet Médical et Réseau Santé Agile" />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/output.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Santé Agile</title>
 </head>
 
 <body>
-    
+    <header class="w-full relative" aria-label="En-tête du site">
+
+        <!-- Logo -->
+        <div class="flex flex-row py-5 items-center">
+            <hr class="flex-grow border-t-[2px] border-blue-800" />
+            <img class="h-28 lg:px-28" src="/src/img/sante-agile.webp" alt="Logo de Santé Agile" loading="lazy" />
+            <hr class="flex-grow border-t-[2px] border-blue-800" />
+        </div>
+
+        <!-- Menu desktop -->
+        <nav aria-label="Menu de navigation desktop" class="hidden lg:block">
+            <!-- Nav links -->
+            <ul class="flex flex-row justify-evenly pt-6 text-blue-800 lg:text-sm xl:text-base">
+                <li>
+                    <a href="#">Accueil du Cabinet</a>
+                </li>
+                <li>
+                    <a href="#">Médecine interne générale intégrative</a>
+                </li>
+                <li>
+                    <a href="#">Soins proposés</a>
+                </li>
+                <li>
+                    <a href="#">Santé Agile Academy</a>
+                </li>
+                <li>
+                    <a href="#">Santé Agile Consulting</a>
+                </li>
+                <li>
+                    <a href="#">Publications & Médias</a>
+                </li>
+                <li>
+                    <a href="#">Contact & Collaborations</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Toggle mobile -->
+        <div class="w-full flex justify-end px-5 lg:hidden">
+            <button class="cursor-pointer" id="mobile-nav-toggle" aria-label="Bouton ">
+                <i class="fa-solid fa-bars text-3xl text-blue-800"></i>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav aria-label="Menu de navigation mobile" class="fixed top-0 right-0 h-screen w-full bg-blue-500 transform translate-x-full duration-500 ease-in-out z-50" id="mobile-nav-menu">
+            <!-- Close button -->
+            <button class="absolute top-5 right-5 text-2xl text-white cursor-pointer" id="mobile-nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Nav links -->
+            <ul>
+                <li>
+                    <a href="#">Accueil du Cabinet</a>
+                </li>
+                <li>
+                    <a href="#">Médecine interne générale intégrative</a>
+                </li>
+                <li>
+                    <a href="#">Soins proposés</a>
+                </li>
+                <li>
+                    <a href="#">Santé Agile Academy</a>
+                </li>
+                <li>
+                    <a href="#">Santé Agile Consulting</a>
+                </li>
+                <li>
+                    <a href="#">Publications & Médias</a>
+                </li>
+                <li>
+                    <a href="#">Contact & Collaborations</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
