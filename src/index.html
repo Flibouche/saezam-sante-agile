@@ -105,8 +105,8 @@
             <div class="flex flex-col px-5 space-y-8 lg:flex-row lg:px-0 lg:items-center">
 
                 <!-- Title and button -->
-                <div class="flex flex-col w-full lg:w-1/2 items-start lg:ml-16 space-y-8 2xl:ml-64">
-                    <h2 class="flex text-4xl md:text-5xl xl:text-6xl text-green-500 font-bold">Cabinet médical</h2>
+                <div class="flex flex-col w-full lg:w-1/2 items-start space-y-8 lg:ml-16 2xl:ml-50">
+                    <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-green-500 font-bold">Cabinet médical</h2>
                     <div class="flex flex-row items-center space-x-5">
                         <button class="font-semibold text-blue-800 border-2 border-blue-800 rounded-3xl py-2 px-10 cursor-pointer hover:bg-blue-800 hover:text-white transition-all duration-300">
                             Accéder au Cabinet Médical
@@ -129,7 +129,7 @@
             <div class="flex flex-col-reverse px-5 lg:flex-row lg:px-0 lg:items-center">
 
                 <!-- Image -->
-                <div class="flex lg:w-[50%] justify-center overflow-hidden">
+                <div class="flex lg:w-1/2 justify-center overflow-hidden">
                     <div class="relative w-full h-fit md:h-[500px] lg:h-[250px]">
                         <img src="./img/image-2.webp" alt="Un homme qui parle devant des personnes assises" loading="lazy" />
                         <div class="absolute bottom-20 left-0 w-full h-full bg-white opacity-60"></div>
@@ -137,8 +137,8 @@
                 </div>
 
                 <!-- Title and button -->
-                <div class="flex flex-col w-full lg:w-[50%] items-end pb-8 space-y-8 lg:mr-16 2xl:mr-90">
-                    <h2 class="flex text-4xl md:text-5xl xl:text-6xl text-orange-500 font-bold">Réseau Santé Agile</h2>
+                <div class="flex flex-col w-full lg:w-1/2 items-end space-y-8 pb-8 lg:text-right lg:mr-16 2xl:mr-50">
+                    <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-orange-500 font-bold">Réseau Santé Agile</h2>
                     <div class="flex flex-row items-center space-x-5">
                         <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
                         <button class="font-semibold text-blue-800 border-2 border-blue-800 rounded-3xl py-2 px-10 cursor-pointer hover:bg-blue-800 hover:text-white transition-all duration-300">
@@ -150,16 +150,16 @@
             </div>
 
             <!-- Third part -->
-            <div class="flex flex-col px-5 lg:px-0 space-y-8 lg:flex-row">
+            <div class="relative flex flex-col items-center px-5 lg:px-0 space-y-8 lg:flex-row">
 
                 <!-- Text -->
-                <div class="flex flex-col w-full items-start font-bold text-blue-800 space-y-8 lg:pr-16 lg:pl-16 xl:pl-32">
+                <div class="flex flex-col w-full items-start font-bold text-blue-800 lg:ml-16 space-y-8 2xl:ml-50">
                     <p>Médecine interne générale intégrative au service <br class="hidden lg:block" /> des patients et du développement de la santé intégrative.</p>
                     <p>Cabinet médical & Réseau Santé Agile : <br class="hidden lg:block" /> une approche intégrative structurée.</p>
                 </div>
 
-                <!-- Separator -->
-                <div class="lg:hidden flex flex-row py-5 items-center">
+                <!-- Mobile Separator -->
+                <div class="lg:hidden flex flex-row w-full py-5 items-center">
                     <hr class="flex-grow border-t-[2px] border-blue-800" />
                     <div class="flex flex-row items-center space-x-4 px-4">
                         <i class="fa-solid fa-circle text-green-500 text-2xl"></i>
@@ -169,22 +169,81 @@
                 </div>
 
                 <!-- Blue background -->
-                <div class="hidden lg:block relative w-full bg-teal-100 h-[200px] lg:h-[250px] lg:w-[800px]">
-                    <div class="flex flex-row absolute w-full items-center bottom-10 right-8/12">
-                        <div class="flex flex-row items-center space-x-2 pr-8">
-                            <i class="fa-solid fa-circle text-green-500 text-2xl"></i>
-                            <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
-                        </div>
-                        <hr class="w-full border-t-[2px] border-blue-800" />
+                <div class="hidden lg:block w-full bg-teal-100 h-[200px] lg:h-[350px]"></div>
+
+                <!-- Desktop Separator -->
+                <div class="hidden absolute bottom-20 lg:flex flex-row w-full items-center pl-[10%] pr-[30%]">
+                    <div class="flex flex-row items-center space-x-2 pr-8">
+                        <i class="fa-solid fa-circle text-green-500 text-2xl"></i>
+                        <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
+                    </div>
+                    <hr class="w-full border-t-[2px] border-blue-800" />
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Cabinet Médical -->
+        <section id="cabinet-medical" class="w-full lg:mt-10 space-y-10">
+
+            <!-- First part -->
+            <div class="flex justify-end px-5">
+
+                <!-- Title and text -->
+                <div class="flex flex-col w-full lg:w-1/2 items-end pb-8 space-y-8 lg:mr-16 2xl:mr-80">
+                    <h2 class="flex text-4xl md:text-5xl xl:text-7xl text-green-500 font-bold">Le Cabinet Médical</h2>
+                    <!-- Text -->
+                    <div class="font-bold text-blue-800 text-justify">
+                        <p>Le Cabinet Dr Sylvain Berney est un établissement de médecine interne générale intégrative situé en plein cœur de Genève (chemin Taverney 11, 1218 Grand-Saconnex) dans lequel différentes spécialités sont pratiquées : la médecine générale, la médecine traditionnelle chinoise, les soins de plaies. <br />
+                            Nous nous spécialisons dans le traitement de la douleur, des toubles émotionnels (dépression, épuisement professionnel), et des troubles fonctionnels.</p>
                     </div>
                 </div>
 
             </div>
-        </section>
 
-        <!-- Cabinet Médical -->
-        <section id="cabinet-medical">
+            <!-- Second part -->
+            <div class="flex flex-col items-center px-5 space-y-8 lg:flex-row">
 
+                <!-- Title, text, button and communications -->
+                <div class="flex flex-col w-full space-y-8 lg:ml-16 2xl:ml-50">
+                    <h2 class="flex text-4xl md:text-5xl xl:text-7xl text-green-500 font-bold">Soins proposés</h2>
+                    <div class="font-bold text-blue-800 text-justify space-y-5">
+                        <p>Médecine interne générale intégrative (médecine générale, <br class="hidden lg:block" /> acupuncture, phytothérapie occidentale, soins de plaies, <br class="hidden lg:block" /> ondes de choc, conseils diététiques, médecine manuelle <br class="hidden lg:block" /> chinoise (tuina)...)</p>
+                        <p>Consultations classiques (suivi médical)</p>
+                        <p>Approche complémentaire & globale</p>
+                        <p>Réseau structuré et coordonné de partenaires <br class="hidden lg:block" /> pour les médecines complémentaires <br class="hidden lg:block" /> non pratiquées au cabinet</p>
+                    </div>
+                    <button class="font-semibold text-white bg-green-500 border-2 border-green-500 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-green-500 transition-all duration-300">
+                        Prendre rendez-vous
+                    </button>
+                    <div class="flex flex-row w-full justify-evenly space-x-5 font-black">
+                        <div class="flex flex-row items-center space-x-5">
+                            <i class="fa-solid fa-phone bg-green-500 p-4 rounded-full text-white"></i>
+                            <span class="text-blue-800">022 733 13 13</span>
+                        </div>
+                        <div class="flex flex-row items-center space-x-5">
+                            <i class="fa-solid fa-envelope bg-green-500 p-4 rounded-full text-white"></i>
+                            <span class="text-blue-800">info@sberney.ch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adress with Gmap -->
+                <div class="flex flex-col">
+                    <div class="hidden lg:block w-full bg-teal-100 h-[200px] lg:h-[350px]">
+                        <div class="flex flex-col items-start justify-end h-full pl-16 pb-16 text-teal-800">
+                            <i class="fa-solid fa-location-pin text-8xl text-teal-800 pb-16"></i>
+                            <p class="font-extrabold text-5xl">adresse</p>
+                            <p class="font-semibold">11 chemin Taverney, 1218 Grand-Saconnex - Suisse</p>
+                        </div>
+                    </div>
+                    <iframe class="lg:hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="hidden lg:block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
         </section>
 
         <!-- Réseau Santé Agile -->
