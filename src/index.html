@@ -99,11 +99,14 @@
     <main>
 
         <!-- Hero -->
-        <section id="hero" class="w-full">
-            <div class="flex flex-col px-5 space-y-5">
+        <section id="hero" class="w-full mt-10 lg:mt-20 space-y-10">
 
-                <div class="flex flex-col w-full items-start space-y-5">
-                    <h2 class="text-6xl text-green-500 font-bold">Cabinet médical</h2>
+            <!-- First part -->
+            <div class="flex flex-col px-5 space-y-8 lg:flex-row lg:px-0 lg:items-center">
+
+                <!-- Title and button -->
+                <div class="flex flex-col w-full lg:w-1/2 items-start lg:ml-16 space-y-8 2xl:ml-64">
+                    <h2 class="flex text-4xl md:text-5xl xl:text-6xl text-green-500 font-bold">Cabinet médical</h2>
                     <div class="flex flex-row items-center space-x-5">
                         <button class="font-semibold text-blue-800 border-2 border-blue-800 rounded-3xl py-2 px-10 cursor-pointer hover:bg-blue-800 hover:text-white transition-all duration-300">
                             Accéder au Cabinet Médical
@@ -112,20 +115,69 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center overflow-hidden">
-                    <div class="relative w-full h-[500px]">
+                <!-- Image -->
+                <div class="flex lg:w-1/2 justify-center overflow-hidden">
+                    <div class="relative w-full h-fit md:h-[500px] lg:h-[250px]">
                         <img src="./img/image-1.webp" alt="Une femme médecin qui discute avec un patient de son diagnostic médical" loading="lazy" />
-                        <div class="absolute top-10 left-0 w-full h-full bg-white opacity-60"></div>
+                        <div class="absolute top-20 left-0 w-full h-full bg-white opacity-60"></div>
                     </div>
                 </div>
 
             </div>
 
-            <div>
+            <!-- Second part -->
+            <div class="flex flex-col-reverse px-5 lg:flex-row lg:px-0 lg:items-center">
+
+                <!-- Image -->
+                <div class="flex lg:w-[50%] justify-center overflow-hidden">
+                    <div class="relative w-full h-fit md:h-[500px] lg:h-[250px]">
+                        <img src="./img/image-2.webp" alt="Un homme qui parle devant des personnes assises" loading="lazy" />
+                        <div class="absolute bottom-20 left-0 w-full h-full bg-white opacity-60"></div>
+                    </div>
+                </div>
+
+                <!-- Title and button -->
+                <div class="flex flex-col w-full lg:w-[50%] items-end pb-8 space-y-8 lg:mr-16 2xl:mr-90">
+                    <h2 class="flex text-4xl md:text-5xl xl:text-6xl text-orange-500 font-bold">Réseau Santé Agile</h2>
+                    <div class="flex flex-row items-center space-x-5">
+                        <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
+                        <button class="font-semibold text-blue-800 border-2 border-blue-800 rounded-3xl py-2 px-10 cursor-pointer hover:bg-blue-800 hover:text-white transition-all duration-300">
+                            Découvrir le Réseau Santé Agile
+                        </button>
+                    </div>
+                </div>
 
             </div>
 
-            <div>
+            <!-- Third part -->
+            <div class="flex flex-col px-5 lg:px-0 space-y-8 lg:flex-row">
+
+                <!-- Text -->
+                <div class="flex flex-col w-full items-start font-bold text-blue-800 space-y-8 lg:pr-16 lg:pl-16 xl:pl-32">
+                    <p>Médecine interne générale intégrative au service <br class="hidden lg:block" /> des patients et du développement de la santé intégrative.</p>
+                    <p>Cabinet médical & Réseau Santé Agile : <br class="hidden lg:block" /> une approche intégrative structurée.</p>
+                </div>
+
+                <!-- Separator -->
+                <div class="lg:hidden flex flex-row py-5 items-center">
+                    <hr class="flex-grow border-t-[2px] border-blue-800" />
+                    <div class="flex flex-row items-center space-x-4 px-4">
+                        <i class="fa-solid fa-circle text-green-500 text-2xl"></i>
+                        <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
+                    </div>
+                    <hr class="flex-grow border-t-[2px] border-blue-800" />
+                </div>
+
+                <!-- Blue background -->
+                <div class="hidden lg:block relative w-full bg-teal-100 h-[200px] lg:h-[250px] lg:w-[800px]">
+                    <div class="flex flex-row absolute w-full items-center bottom-10 right-8/12">
+                        <div class="flex flex-row items-center space-x-2 pr-8">
+                            <i class="fa-solid fa-circle text-green-500 text-2xl"></i>
+                            <i class="fa-solid fa-circle text-orange-500 text-2xl"></i>
+                        </div>
+                        <hr class="w-full border-t-[2px] border-blue-800" />
+                    </div>
+                </div>
 
             </div>
         </section>
