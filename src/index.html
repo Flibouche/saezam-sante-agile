@@ -219,7 +219,7 @@
 
                 <!-- Title, text, button and communications -->
                 <div class="flex flex-col w-full space-y-8 lg:ml-16 2xl:ml-42">
-                    <h2 class="flex text-4xl md:text-5xl xl:text-7xl text-lime-500 font-bold">Soins proposés</h2>
+                    <h3 class="flex text-3xl md:text-4xl xl:text-6xl text-lime-500 font-bold">Soins proposés</h3>
                     <div class="font-bold text-sky-900 text-justify space-y-5">
                         <p>Médecine interne générale intégrative (médecine générale, <br class="hidden lg:block" /> acupuncture, phytothérapie occidentale, soins de plaies, <br class="hidden lg:block" /> ondes de choc, conseils diététiques, médecine manuelle <br class="hidden lg:block" /> chinoise (tuina)...)</p>
                         <p>Consultations classiques (suivi médical)</p>
@@ -259,10 +259,10 @@
         </section>
 
         <!-- Réseau Santé Agile -->
-        <section id="reseau-sante-agile" class="w-full lg:mt-10 space-y-10">
+        <section id="reseau-sante-agile" class="w-full mt-10 space-y-10">
 
             <!-- First part -->
-            <div class="flex flex-col px-5 space-y-8 lg:flex-row lg:px-0 lg:items-center">
+            <div class="flex flex-col px-5 lg:flex-row lg:px-0 lg:items-center">
 
                 <!-- Title and button -->
                 <div class="flex flex-col w-full lg:w-1/2 items-start space-y-8 lg:ml-16 2xl:ml-50">
@@ -282,40 +282,107 @@
             <div class="flex flex-col px-5 space-y-8 lg:flex-row lg:px-0 lg:items-center">
 
                 <!-- Cards -->
-                <div class="flex flex-col">
+                <div class="flex flex-col w-full justify-evenly space-y-10 lg:flex-row lg:flex-wrap xl:space-y-0 xl:space-x-8">
 
                     <!-- First card -->
-                    <div class="">
-                        <h3 class="text-orange-600">Santé Agile Academy</h3>
-                        <hr class="w-full border-t-[2px] border-sky-900" />
-                        <ul>
-                            <li>Formations pour les professionnels de santé</li>
-                            <li>Recherche et publications en médecine intégrative</li>
-                            <li>Partenariats académiques et scientifiques</li>
+                    <div class="flex flex-col p-5 space-y-8">
+
+                        <!-- Card header -->
+                        <div class="relative p-10 w-full">
+                            <div class="absolute w-3/5 inset-0 bg-teal-100/70"></div>
+                            <h3 class="relative text-3xl xl:text-5xl text-orange-600 font-bold">Santé Agile <br class="hidden lg:block" /> Academy</h3>
+                        </div>
+
+                        <!-- Separator -->
+                        <div class="flex w-full justify-center">
+                            <hr class="w-[90%] border-t-[2px] border-sky-900" />
+                        </div>
+
+                        <!-- Card content -->
+                        <ul class="flex flex-col w-full items-start px-8 space-y-5">
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Formations pour <br class="hidden lg:block" /> les professionnels de santé</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Recherche et publications <br class="hidden lg:block" /> en médecine intégrative</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Partenariats académiques <br class="hidden lg:block" /> et scientifiques</span>
+                            </li>
                         </ul>
+
                     </div>
 
                     <!-- Second card -->
-                    <div>
-                        <h3 class="text-orange-600">Santé Agile Consulting</h3>
-                        <hr class="w-full border-t-[2px] border-sky-900" />
-                        <ul>
-                            <li>Audit & Implémentation de pôles intégratifs</li>
-                            <li>Stratégie de développement pour structures hospitalières & ambulatoires</li>
-                            <li>Formation et accompagnement des professionnels</li>
-                            <li>Accompagnement juridique et organisationnel</li>
+                    <div class="flex flex-col p-5 space-y-8">
+
+                        <!-- Card header -->
+                        <div class="relative p-10 w-full">
+                            <div class="absolute w-3/5 inset-0 bg-teal-100/70"></div>
+                            <h3 class="relative text-3xl xl:text-5xl text-orange-600 font-bold">Santé Agile <br class="hidden lg:block" /> Consulting</h3>
+                        </div>
+
+                        <!-- Separator -->
+                        <div class="flex w-full justify-center">
+                            <hr class="w-[90%] border-t-[2px] border-sky-900" />
+                        </div>
+
+                        <!-- Card content -->
+                        <ul class="flex flex-col w-full items-start px-8 space-y-5">
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Audit & Implémentation <br /> de pôles intégratifs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Stratégie de développement <br /> pour structures hospitalières <br /> & ambulatoires</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Formation et accompagnement <br /> des professionnels</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Accompagnement juridique <br /> et organisationnel</span>
+                            </li>
                         </ul>
                     </div>
 
                     <!-- Third card -->
-                    <div>
-                        <h3 class="text-orange-600">Publications & Médias</h3>
-                        <hr class="w-full border-t-[2px] border-sky-900" />
-                        <ul>
-                            <li>Articles scientifiques et contributions (dont RMS)</li>
-                            <li>LinkedIn et posts clés</li>
-                            <li>Conférences & Webinaires passés et à venir</li>
-                            <li>Médias et collaborations externes</li>
+                    <div class="flex flex-col p-5 space-y-8">
+
+                        <!-- Card header -->
+                        <div class="relative p-10 w-full">
+                            <div class="absolute w-3/5 inset-0 bg-teal-100/70"></div>
+                            <h3 class="relative text-3xl xl:text-5xl text-orange-600 font-bold">Publications <br class="hidden lg:block" /> & Médias</h3>
+                        </div>
+
+                        <!-- Separator -->
+                        <div class="flex w-full justify-center">
+                            <hr class="w-[90%] border-t-[2px] border-sky-900" />
+                        </div>
+
+                        <!-- Card content -->
+                        <ul class="flex flex-col w-full items-start px-8 space-y-5">
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Articles scientifiques <br /> et contributions (dont RMS)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">LinkedIn et posts clés</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Conférences & Webinaires <br /> passés et à venir</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="mt-1 h-4 w-4 rounded-full bg-orange-600"></div>
+                                <span class="ml-3 text-sky-900 font-semibold">Médias et collaborations <br /> externes</span>
+                            </li>
                         </ul>
                     </div>
 
