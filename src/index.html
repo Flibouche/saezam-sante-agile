@@ -56,7 +56,7 @@
 
         <!-- Toggle mobile -->
         <div class="w-full flex justify-end px-5 xl:hidden">
-            <button class="cursor-pointer" id="mobile-nav-toggle" aria-label="Bouton ">
+            <button class="cursor-pointer" id="mobile-nav-toggle" aria-label="Bouton pour ouvrir le menu de navigation mobile">
                 <i class="fa-solid fa-bars text-3xl text-sky-900 hover:text-sky-400 transform transition-all duration-300"></i>
             </button>
         </div>
@@ -64,7 +64,7 @@
         <!-- Menu mobile -->
         <nav aria-label="Menu de navigation mobile" class="fixed top-0 right-0 h-screen w-full bg-black/85 transform -translate-y-full duration-500 ease-in-out z-50" id="mobile-nav-menu">
             <!-- Close button -->
-            <button class="absolute top-5 right-5 text-2xl text-white hover:text-sky-400 transform transition-all duration-300 cursor-pointer" id="mobile-nav-close">
+            <button aria-label="Bouton pour fermer le menu de navigation mobile" class="absolute top-5 right-5 text-2xl text-white hover:text-sky-400 transform transition-all duration-300 cursor-pointer" id="mobile-nav-close">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
@@ -111,13 +111,21 @@
 
                 <!-- Title and button -->
                 <div class="flex flex-col w-full lg:w-1/2 items-start space-y-8 lg:ml-16 2xl:ml-50">
+
+                    <!-- Title -->
                     <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-lime-500 font-bold">Cabinet médical</h2>
-                    <div class="flex flex-row items-center space-x-5">
-                        <button class="font-semibold text-sky-900 border-2 border-sky-900 rounded-3xl py-2 px-10 cursor-pointer hover:bg-sky-900 hover:text-white transition-all duration-300">
+
+                    <!-- Button and separator -->
+                    <div class="flex flex-row w-full items-center space-x-5">
+                        <button aria-label="Accéder au Cabinet Médical" class="text-sm sm:text-base font-semibold text-sky-900 border-2 border-sky-900 rounded-3xl py-2 px-10 cursor-pointer hover:bg-sky-900 hover:text-white transition-all duration-300">
                             Accéder au Cabinet Médical
                         </button>
-                        <i class="fa-solid fa-circle text-lime-500 text-2xl"></i>
+                        <div class="relative flex flex-row items-center">
+                            <div class="absolute border-l-2 border-sky-900 rounded-full w-full py-5 px-5"></div>
+                            <i class="fa-solid fa-circle text-lime-500 text-2xl pl-2"></i>
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- Image -->
@@ -143,13 +151,21 @@
 
                 <!-- Title and button -->
                 <div class="flex flex-col w-full lg:w-1/2 items-end space-y-8 pb-8 lg:text-right lg:mr-16 2xl:mr-50">
+
+                    <!-- Title -->
                     <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-orange-600 font-bold">Réseau Santé Agile</h2>
-                    <div class="flex flex-row items-center space-x-5">
-                        <i class="fa-solid fa-circle text-orange-600 text-2xl"></i>
-                        <button class="font-semibold text-sky-900 border-2 border-sky-900 rounded-3xl py-2 px-10 cursor-pointer hover:bg-sky-900 hover:text-white transition-all duration-300">
+
+                    <!-- Button and separator -->
+                    <div class="flex flex-row items-center space-x-10">
+                        <div class="relative flex flex-row items-center">
+                            <div class="absolute border-r-2 border-sky-900 rounded-full w-full py-5 px-5"></div>
+                            <i class="fa-solid fa-circle text-orange-600 text-2xl"></i>
+                        </div>
+                        <button aria-label="Découvrir le Réseau Santé Agile" class="text-sm sm:text-base font-semibold text-sky-900 border-2 border-sky-900 rounded-3xl py-2 px-10 cursor-pointer hover:bg-sky-900 hover:text-white transition-all duration-300">
                             Découvrir le Réseau Santé Agile
                         </button>
                     </div>
+
                 </div>
 
             </div>
@@ -227,7 +243,7 @@
                         <p>Approche complémentaire & globale</p>
                         <p>Réseau structuré et coordonné de partenaires <br class="hidden xl:block" /> pour les médecines complémentaires <br class="hidden xl:block" /> non pratiquées au cabinet</p>
                     </div>
-                    <button class="font-semibold text-white bg-lime-500 border-2 border-lime-500 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-lime-500 transition-all duration-300">
+                    <button aria-label="Prendre rendez-vous" class="text-sm sm:text-base font-semibold text-white bg-lime-500 border-2 border-lime-500 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-lime-500 transition-all duration-300">
                         Prendre rendez-vous
                     </button>
                     <div class="flex flex-col space-y-5 items-center sm:flex-row sm:space-y-0 w-full justify-evenly space-x-5 font-black">
@@ -261,8 +277,8 @@
                         </div>
                         <hr class="absolute bottom-0 right-30 inline-block lg:h-[300px] xl:h-[400px] w-[2px] self-stretch bg-sky-900" />
                     </div>
-                    <iframe class="lg:hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe class="hidden lg:block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="lg:hidden" title="Adresse de Santé Agile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="hidden lg:block" title="Adresse de Santé Agile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </div>
@@ -275,7 +291,7 @@
             <!-- First part -->
             <div class="first-part flex flex-row px-5 lg:px-0 lg:space-x-8 xl:space-x-0">
 
-                <!-- Title and button -->
+                <!-- Title and text -->
                 <div class="flex flex-col w-full lg:w-1/2 items-start space-y-8 lg:ml-16 2xl:ml-50">
                     <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-orange-600 font-bold">Réseau Santé Agile</h2>
                     <div class="font-bold text-sky-900 text-justify space-y-5">
@@ -411,7 +427,7 @@
                     <hr class="w-full border-t-[2px] border-sky-900" />
                     <div class="flex flex-col w-full justify-between items-center space-x-16 space-y-8 lg:flex-row lg:space-y-0">
                         <p class="text-sky-900 font-bold text-2xl lg:text-3xl">Vous souhaitez intégrer la médecine <br class="hidden 2xl:block" /> intégrative dans votre structure ?</p>
-                        <button class="w-full lg:w-1/2 font-semibold text-white bg-orange-600 border-2 border-orange-600 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-orange-600 transition-all duration-300">
+                        <button aria-label="Découvrez comment Santé Agile peut vous accompagner" class="w-full lg:w-1/2 text-sm sm:text-base font-semibold text-white bg-orange-600 border-2 border-orange-600 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-orange-600 transition-all duration-300">
                             Découvrez comment Santé Agile peut vous accompagner
                         </button>
                     </div>
@@ -431,7 +447,7 @@
             <!-- First part -->
             <div class="first-part flex flex-col w-full px-5 space-y-8 lg:px-0">
 
-                <!-- Title and button -->
+                <!-- Title -->
                 <div class="flex flex-col w-full items-start space-y-8 lg:pl-16 2xl:pl-45">
                     <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-900 font-bold">Nos <br class="hidden lg:block" /> partenaires</h2>
                 </div>
@@ -469,7 +485,7 @@
             <!-- First part -->
             <div class="first-part flex flex-col w-full px-5 space-y-8 lg:px-0">
 
-                <!-- Title and button -->
+                <!-- Title -->
                 <div class="flex flex-col justify-center w-full items-start xl:flex-row lg:items-center space-y-8 lg:ml-16 2xl:ml-45">
                     <h2 class="flex w-full text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-900 font-bold">Le mot du fondateur</h2>
                     <div class="flex flex-row w-full items-center xl:pl-8 lg:pr-[20%]">
