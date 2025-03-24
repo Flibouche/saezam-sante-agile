@@ -216,16 +216,16 @@
             </div>
 
             <!-- Second part -->
-            <div class="second-part flex flex-col items-center lg:mt-20 px-5 lg:px-0 space-y-8 lg:flex-row">
+            <div class="second-part relative flex flex-col w-full items-center xl:mt-20 px-5 lg:px-0 space-y-8 xl:flex-row">
 
                 <!-- Title, text, button and communications -->
-                <div class="flex flex-col w-full space-y-8 lg:ml-16 2xl:ml-42">
+                <div class="flex flex-col w-full space-y-8 lg:pt-16 lg:px-5 2xl:ml-38">
                     <h3 class="flex text-3xl md:text-4xl xl:text-6xl text-lime-500 font-bold">Soins proposés</h3>
                     <div class="font-bold text-sky-900 text-justify space-y-5">
-                        <p>Médecine interne générale intégrative (médecine générale, <br class="hidden lg:block" /> acupuncture, phytothérapie occidentale, soins de plaies, <br class="hidden lg:block" /> ondes de choc, conseils diététiques, médecine manuelle <br class="hidden lg:block" /> chinoise (tuina)...)</p>
+                        <p>Médecine interne générale intégrative (médecine générale, <br class="hidden xl:block" /> acupuncture, phytothérapie occidentale, soins de plaies, <br class="hidden xl:block" /> ondes de choc, conseils diététiques, médecine manuelle <br class="hidden xl:block" /> chinoise (tuina)...)</p>
                         <p>Consultations classiques (suivi médical)</p>
                         <p>Approche complémentaire & globale</p>
-                        <p>Réseau structuré et coordonné de partenaires <br class="hidden lg:block" /> pour les médecines complémentaires <br class="hidden lg:block" /> non pratiquées au cabinet</p>
+                        <p>Réseau structuré et coordonné de partenaires <br class="hidden xl:block" /> pour les médecines complémentaires <br class="hidden xl:block" /> non pratiquées au cabinet</p>
                     </div>
                     <button class="font-semibold text-white bg-lime-500 border-2 border-lime-500 rounded-3xl py-2 px-10 cursor-pointer hover:bg-white hover:text-lime-500 transition-all duration-300">
                         Prendre rendez-vous
@@ -242,14 +242,24 @@
                     </div>
                 </div>
 
+                <!-- Vertical and Horizontal Separators -->
+                <div class="hidden absolute left-7 xl:top-35 lg:left-25 xl:left-30 w-full xl:flex items-center justify-center z-10">
+                    <hr class="absolute lg:w-[30%] xl:w-[33%] h-full border-t-[2px] border-sky-900" />
+                </div>
+
+                <div class=" hidden relative xl:block xl:w-1/3 h-full z-10">
+                    <hr class="absolute left-25 -top-48.5 inline-block h-[600px] w-[2px] self-stretch bg-sky-900" />
+                </div>
+
                 <!-- Adress with Gmap -->
-                <div class="flex flex-col">
-                    <div class="hidden lg:block w-full bg-teal-100/70 h-[200px] lg:h-[350px]">
-                        <div class="flex flex-col items-start justify-end h-full pl-16 pb-16 text-teal-800">
-                            <i class="fa-solid fa-location-pin text-8xl text-teal-800 pb-16"></i>
+                <div class="flex flex-col xl:w-1/2">
+                    <div class="hidden relative lg:block w-full bg-teal-100/70 h-[200px] lg:h-[350px]">
+                        <div class="flex flex-col items-start justify-end h-full pl-16 pb-12 text-sky-800">
+                            <i class="fa-solid fa-location-pin text-8xl text-sky-800 pb-14 xl:pb-28"></i>
                             <p class="font-extrabold text-5xl">adresse</p>
                             <p class="font-semibold">11 chemin Taverney, 1218 Grand-Saconnex - Suisse</p>
                         </div>
+                        <hr class="absolute bottom-0 right-30 inline-block lg:h-[300px] xl:h-[400px] w-[2px] self-stretch bg-sky-900" />
                     </div>
                     <iframe class="lg:hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <iframe class="hidden lg:block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.023395092567!2d6.11724007666247!3d46.230112082010606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c648dcb4b6a47%3A0x8c1807750cd5ab74!2sChem.%20Taverney%2011%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1742682016112!5m2!1sfr!2sfr" width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
