@@ -419,7 +419,7 @@
             </div>
 
             <!-- Second part -->
-            <div class="first-part flex flex-row w-full px-5 space-y-8 lg:px-0">
+            <div class="second-part flex flex-row w-full px-5 space-y-8 lg:px-0">
 
                 <div class="hidden lg:flex w-full lg:w-1/2"></div>
 
@@ -445,17 +445,60 @@
         </section>
 
         <!-- Le mot du fondateur -->
-        <section id="mot-du-fondateur" class="relative w-full mt-10 lg:mt-20 space-y-10">
+        <section id="mot-du-fondateur" class="relative w-full overflow-hidden mt-10 lg:mt-20 lg:py-10 space-y-10">
 
             <!-- First part -->
             <div class="first-part flex flex-col w-full px-5 space-y-8 lg:px-0">
 
                 <!-- Title and button -->
-                <div class="flex flex-col w-full items-start space-y-8 lg:ml-16 2xl:ml-45">
-                    <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-900 font-bold">Le mot du fondateur</h2>
+                <div class="flex flex-col justify-center w-full items-start xl:flex-row lg:items-center space-y-8 lg:ml-16 2xl:ml-45">
+                    <h2 class="flex w-full text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-900 font-bold">Le mot du fondateur</h2>
+                    <div class="flex flex-row w-full items-center xl:pl-8 lg:pr-[20%]">
+                        <hr class="w-full border-t-[2px] border-sky-900" />
+                    </div>
                 </div>
 
             </div>
+
+            <!-- Second part -->
+            <div class="second-part flex flex-col items-center justify-evenly lg:flex-row lg:flex-wrap xl:flex-nowrap w-full px-5 space-y-8 xl:space-y-0 lg:px-16">
+
+                <!-- Image -->
+                <div class="relative overflow-hidden">
+                    <img class="w-72 lg:w-56 rounded-full" src="./img/fondateur.webp" alt="Portrait de Sylvain Berney, fondateur de Santé Agile" loading="lazy">
+                    <div class="absolute w-full h-full top-45 bg-white opacity-70"></div>
+                </div>
+
+                <!-- Text -->
+                <div class="space-y-4 text-sky-900">
+                    <p class="font-semibold">En créant Santé Agile, nous souhaitons apporter du mouvement à votre santé. <br class="hidden lg:block" /> Nous vous proposons pour cela un cabinet médical au centre de Genève.</p>
+                    <p class="font-semibold">Nous offrons à nos patients une approche individualisée tout en les considérant dans leur globalité. <br class="hidden lg:block" />
+                        Nous souhaitons enfin encourager le développement et la transmission de connaissances autour <br class="hidden lg:block" />
+                        de la médecine intégrative en favorisant le développement d'un réseau à Genève et en créant <br class="hidden lg:block" />
+                        cette antenne d'information dédiée.
+                    </p>
+                    <span class="font-extrabold">Sylvain Berney, Fondateur</span>
+                </div>
+
+                <!-- Social Medias -->
+                <div class="flex flex-row xl:flex-col w-full xl:w-0 justify-center space-x-8 xl:space-x-0 xl:space-y-8 text-7xl text-sky-900">
+                    <button class="cursor-pointer hover:scale-110 transform transition-all duration-300" aria-label="Lien vers le profil LinkedIn de Santé Agile">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </button>
+                    <button class="cursor-pointer hover:scale-110 transform transition-all duration-300" aria-label="Lien vers le profil Facebook de Santé Agile">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Blue background -->
+            <div class="absolute -z-10 top-0 right-0 hidden lg:block h-full lg:w-[350px] xl:w-[450px] bg-teal-100/70"></div>
+
         </section>
 
     </main>
