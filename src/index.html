@@ -62,7 +62,7 @@
         </div>
 
         <!-- Menu mobile -->
-        <nav aria-label="Menu de navigation mobile" class="fixed top-0 right-0 h-screen w-full bg-blue-500 transform translate-x-full duration-500 ease-in-out z-50" id="mobile-nav-menu">
+        <nav aria-label="Menu de navigation mobile" class="hidden fixed top-0 right-0 h-screen w-full bg-blue-500 transform translate-x-full duration-500 ease-in-out z-50" id="mobile-nav-menu">
             <!-- Close button -->
             <button class="absolute top-5 right-5 text-2xl text-white cursor-pointer" id="mobile-nav-close">
                 <i class="fa-solid fa-xmark"></i>
@@ -102,11 +102,8 @@
         <section id="hero" class="relative w-full mt-10 lg:mt-20 space-y-10">
 
             <!-- Decoration -->
-            <!-- class="absolute hidden 2xl:block" -->
-            <div class="hidden absolute h-full w-full top-40 z-10">
-                <svg class="absolute w-full hidden 2xl:block" viewBox="0 0 1000 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0,50 C250,-50 750,250 1000,100" fill="none" stroke="#005B94" stroke-width="2" />
-                </svg>
+            <div class="absolute hidden lg:block h-full w-full top-25 z-10">
+                <img src="./img/wave.svg" alt="Ligne de décoration" loading="lazy">
             </div>
 
             <!-- First part -->
@@ -408,11 +405,16 @@
         <!-- Nos partenaires -->
         <section id="nos-partenaires" class="relative w-full mt-10 lg:mt-20 space-y-10">
 
+            <!-- Decoration -->
+            <div class="absolute hidden lg:block h-full w-full top-0 z-10">
+                <img src="./img/wave.svg" alt="Ligne de décoration" loading="lazy">
+            </div>
+
             <!-- First part -->
             <div class="first-part flex flex-col w-full px-5 space-y-8 lg:px-0">
 
                 <!-- Title and button -->
-                <div class="flex flex-col w-full items-start space-y-8 lg:ml-16 2xl:ml-45">
+                <div class="flex flex-col w-full items-start space-y-8 lg:pl-16 2xl:pl-45">
                     <h2 class="flex text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-900 font-bold">Nos <br class="hidden lg:block" /> partenaires</h2>
                 </div>
 
@@ -425,7 +427,7 @@
 
                 <!-- Logos and text -->
 
-                <div class="flex flex-col w-full xl:w-1/2 items-start xl:items-center space-y-8 text-sky-900 font-semibold lg:mr-16 2xl:mr-8">
+                <div class="flex flex-col w-full xl:w-1/2 items-start lg:items-center space-y-8 text-sky-900 font-semibold lg:mr-16 2xl:mr-8">
 
                     <!-- First logo -->
                     <div class="flex flex-row items-center space-x-16">
