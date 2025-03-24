@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileNavClose = document.getElementById('mobile-nav-close');
 
     mobileNavToggle.addEventListener('click', () => {
-        mobileNavMenu.classList.remove('translate-x-full');
+        mobileNavMenu.classList.remove('-translate-y-full');
     });
 
     mobileNavClose.addEventListener('click', () => {
-        mobileNavMenu.classList.add('translate-x-full');
+        mobileNavMenu.classList.add('-translate-y-full');
     });
 });
 
