@@ -36,3 +36,21 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollReveal.reveal(`.third-part`, { origin: 'left', delay: 1000 });
     scrollReveal.reveal(`.card`, { origin: 'top', interval: 500 });
 });
+
+// Show Scroll Up
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollUp = () => {
+
+        const scrollUp = document.getElementById('scroll-up');
+
+        if (window.scrollY >= 450) {
+            scrollUp.classList.remove("bottom-[-50%]");
+            scrollUp.classList.add("bottom-5");
+        } else {
+            scrollUp.classList.remove("bottom-5");
+            scrollUp.classList.add("bottom-[-50%]");
+        }
+    };
+
+    window.addEventListener('scroll', scrollUp);
+});
